@@ -9,3 +9,8 @@ i. Character count ii. Character stuffing and iii. bit stuffing
 2.
 3.
 4.
+
+
+### Output
+
+![output](img.png)
