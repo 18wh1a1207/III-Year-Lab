@@ -38,8 +38,5 @@ int main() {
     for(int i=1;i<=NoOfFrames;i++){
         printf("Frame%d: %s\n",i,Frames[i]);
     }
-        
-    
-
-    return 0;
+   return 0;
 }
