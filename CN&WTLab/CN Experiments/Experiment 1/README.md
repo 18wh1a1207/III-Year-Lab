@@ -13,4 +13,4 @@ i. Character count ii. Character stuffing and iii. bit stuffing
 
 ### Output
 
-![output](img.png)
+![output](charactercount.jpg)
