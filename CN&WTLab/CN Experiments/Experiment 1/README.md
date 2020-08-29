@@ -17,3 +17,4 @@ iii. bit stuffing
 
 ![output](charactercount.jpg)
 ![output](bitstuffing.jpg)
+![output](characterstuffing.jpeg)
