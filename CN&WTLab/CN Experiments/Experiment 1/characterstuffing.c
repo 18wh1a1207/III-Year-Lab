@@ -1,35 +1,38 @@
 #include<stdio.h>
-int main(){
-    int n,i,count = 0;
-    printf("Enter number of characters : \n");
-    scanf("%d",&n);
-    char data[100];
-    printf("Enter characters : \n");
-    scanf("%s",data);
-    printf("\nOriginal data : \n");
-    printf("%s\n",data);
-    printf("\nAfter character stuffing :\ndlestx");
-    for(i=0;i<n;i++){
-        printf("%c",data[i]});
-        if(data[i] == 'd'){
-            count++;
-            
-        } else if(data[i] == 'l' && count == 1){
-            count++;
-            
-        } else if(data[i] == 'e' && count==2){
-            printf("dle");
-            count = 0;
-            
-        } else{
-            count = 0;
-            
-        }
-        
+#include<string.h>
+int main()
+{
+ int i=0,count=0,n,j=0;
+ char data[100],res[100];
+ 
+ printf("Enter number of characters: \n");
+ scanf("%d",&n);
+ printf("Enter characters: \n");
+ scanf("%s",data);
+ printf("\nOriginal Data : %s\n",data);
+ printf("\nAfter Character Stuffing:\n");
+ printf("dlestx");
+ for(i=0; i<strlen(data); i++)
+ {
+    if(data[i] == 'd' && data[i+1]== 'l' && data[i+2] == 'e'){
+              printf("dle");
+                j=j+3;
     }
+    printf("%c",data[i]);
+    res[j]=data[i];
+    j++;
+ }
 printf("dleetx\n");
-printf("\nRecived Data After Destuffing :\n");
-printf("%s\n",data);
+printf("\nReceived Data After Destuffing:\n");
+for(i = 0; i < j; i++)
+ {
+    if(res[i] == 'd' && res[i] == 'l' && res[i] == 'e'){
+            i = i+3;
+    }
 
-return 0;
+    printf("%c",res[i]);
+
+ }
+printf("\n");
+ return 0;
 }
