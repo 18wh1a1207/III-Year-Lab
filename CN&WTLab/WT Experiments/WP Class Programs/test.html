@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Java Script</title>
+	</head>
+	<body>
+	<p id="demo">Welcome to JavaScript programming</p>
+	<p>JavaScript is used at both server-side and client side</p>
+	<!-- Java Script events  -->
+	<button onclick="random_fn()">Random Function</button>
+	<button onmouseover="highestElement()">Highest Number</button>
+		<button onmouseout="asscending()">Ascending order</button>
+		<button onclick = "desc()">Descending order</button>
+		<button onclick="displayDate()">Display Date</button>
+	<script>
+		// document.getElementById("demo").innerHTML = "Hello World!!"
+		// document.write("Hello world!!")
+		window.alert("Hello World!!")
+		console.log("Hello world!!")
+		
+		var string1 = "chandana Welcome to"
+		console.log(string1)
+		var x
+		var Number = 20
+		var floatNum = 23.6
+		var String2 = 60
+		var sides = {triangle : 3 ,square : 4}
+		console.log(x)
+		console.log(Number)
+		console.log(floatNum)
+		console.log(typeof(String2))
+		console.log(typeof(sides))
+		console.log(Number == String2)
+		console.log(Number <= String2)
+		
+			var Number1 = 20
+			console.log(Number === Number1)
+			console.log(Number <= Number1)
+			console.log(0101 & 0001)
+			//console.log(0101 | 0001)
+			console.log(string1.length)
+			
+			var college = " BVRIT HYDERABAD college of Engineering for Women"
+			
+			//console.log(college.indexOf("Engineering"))
+			console.log(college.indexOf("college" , 10))
+			console.log(college.search("mn"))
+			console.log(college.lastIndexOf("college"))
+			console.log(college.slice(23,30))
+			console.log(college.substring("of"))
+			console.log(college.slice(2))
+			console.log(college.trim())
+			
+			
+			console.log(college.replace("college","clg"))
+			console.log(string1.toUpperCase())
+			console.log(string1.toLowerCase())
+			console.log(string1.concat("",college))
+			
+			var degrees = [360,90,180,45,0]
+			var roll_numbers = ["1","2","3","4"]
+			console.log(degrees)
+			console.log(degrees[2])
+			var diff_datatypes = [20,"abc",2.6]
+			console.log("different datatypes in an array: " + diff_datatypes)
+			console.log(degrees[0] = 350)
+			roll_numbers[0] = "1201"
+			console.log(roll_numbers)
+			console.log(typeof(degrees))
+			console.log(Array.isArray(diff_datatypes))
+			
+			
+			var ages = [10,45,9,50,80]
+			ages.push(60)
+			console.log(ages)
+			ages.pop()
+			console.log(ages)
+			console.log(ages.length)
+			console.log(ages[ages.length-1])
+			
+			
+			
+			console.log(ages.unshift(100))
+			console.log(ages)
+			//console.log(ages.shift(63))
+			//console.log(ages)
+			
+			ages.splice(2,0,90)
+			console.log(ages)
+			
+			console.log(ages.splice(3,2))
+			var age1 = [200,300]
+			console.log(ages.concat(age1))
+			console.log(ages.slice(2,4))
+			/*for (var i=0; i<ages.length-2 ; i++){
+				console.log(ages[i])
+				
+			}*/
+			
+			var names = ["anusha","anuhya","sai","nikitha","chandana"]
+			console.log("sorting string array")
+			console.log(names.sort())
+			console.log("sorting ages array")
+			console.log(ages.sort())
+			//Compare function
+   
+   function displayDate(){
+   	document.getElementById("demo").innerHTML = Date()
+   	console.log(Date())
+   }
+   
+   function asscending(){
+			var sorted_arr = ages.sort(function(a, b) {return a-b})
+			console.log(sorted_arr)
+   }
+   function desc(){
+			var sorted_arr = ages.sort(function(a, b) {return b-a})
+			console.log(sorted_arr)
+   }
+		console.log("Asscending Elements " + asscending())
+		console.log("Descending Elements "+ desc())	
+		console.log("Highest Element "+highestElement())
+		
+		function highestElement() {
+			var sorted_arr =ages.sort(function(a, b) {return a-b})
+			var highest = sorted_arr[sorted_arr.length-1]
+			console.log(highest)
+		}
+		
+			console.log(names.sort())
+		    var highest_ele = names[names.length-1]
+		   // console.log("Highest elements in a string")
+		   
+		  // var number2
+		  
+		   function square(number2) {
+		   	  return number2 * number2
+		   	  }
+		   	console.log("Square of a number : " + square(6))
+		   	
+		   	//Sorting an array in Random Order
+		   	console.log("Random fn")
+		   	function random_fn() {
+		   	console.log(ages.sort(function(a,b) { return 0.5-Math.random()}))
+		   	}
+		   	console.log(random_fn())
+		   	
+		   	
+			   console.log(Math.max.apply(null,ages))
+			
+			
+			var ele = ages.forEach(fn)
+			function fn(ages) {
+				ages = ages+2
+				console.log(ages)
+			}
+			
+			var ele1 = ages.map(myFunction)
+			console.log(ele1)
+			function myFunction(value) {
+				return value+2
+			}
+			var ele2 = ages.filter(myFunction1)
+			console.log(ele2)
+			function myFunction1(value){
+				return value > 60
+			}
+			
+			var ele3 = ages.reduce(myFunction2)
+			console.log(ele3)
+			function myFunction2(total , value){
+				return total + value
+			}
+			
+			var everyele = ages.every(myFn)
+			console.log(everyele)
+			var someele = ages.some(myFn)
+			console.log(someele)
+			function myFn(value) {
+		          return value > 60		
+			}
+			console.log(ages.find(myFn))
+		   
+	</script>
+	
+	
+		
+	</body>
+</html>
