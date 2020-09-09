@@ -10,4 +10,4 @@ A program to compute CRC code for the polynomials CRC-12, CRC-16 and CRC CCIP
 ### Output
 
 
-![output](crc output.jpeg)
+![output](CRC_output.jpeg)
