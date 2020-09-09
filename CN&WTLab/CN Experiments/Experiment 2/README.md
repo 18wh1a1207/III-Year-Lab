@@ -6,4 +6,8 @@ A program to compute CRC code for the polynomials CRC-12, CRC-16 and CRC CCIP
 ### step by step procedure of experiment
 
 
-![output](crc ouput.jpeg)
+
+### Output
+
+
+![output](crc output.jpeg)
