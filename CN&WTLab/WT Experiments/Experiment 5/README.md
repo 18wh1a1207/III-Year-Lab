@@ -18,6 +18,6 @@ g) Order Conformation
 
 
 ### Output
-![output](homepageOutput.jpeg)
+![output](homepageOutput.png)
 ![output](output.jpeg)
-![output](loginOutput.jpeg)
+![output](loginOutput.png)
