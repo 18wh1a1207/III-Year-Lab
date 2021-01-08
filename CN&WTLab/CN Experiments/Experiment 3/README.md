@@ -23,4 +23,4 @@ In Go-Back-N ARQ, the frames are numbered sequentially as Go-Back-N ARQ sends th
 ![output](Sliding_Window_Protocol_Output.png)
 
 ### Go-Back N Protocol 
-![output](Go-Back N Protocol Output.png)
+![output](Go-Back N protocol Output.png)
