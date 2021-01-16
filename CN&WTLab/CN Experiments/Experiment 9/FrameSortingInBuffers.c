@@ -53,7 +53,7 @@ int main()
         }
     }
 
-        printf("AFTER SHUFFLINGare:\n");
+        printf("AFTER SHUFFLING :\n");
         printf("\n sno \t msg  \n");
         for(i=0;i<n;i++)
             {
