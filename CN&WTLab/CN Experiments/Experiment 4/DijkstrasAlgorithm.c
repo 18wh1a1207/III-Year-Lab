@@ -37,7 +37,7 @@ void dijkstra(int G[MAX][MAX],int n,int startnode) {
 			else
 				cost[i][j]=G[i][j];
 	
-	//initialize pred[],distance[] and visited[]
+	
 	for(i=0;i<n;i++) {
 		distance[i]=cost[startnode][i];
 		pred[i]=startnode;
