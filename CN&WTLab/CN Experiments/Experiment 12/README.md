@@ -18,4 +18,4 @@ Step 6: This command gives OS type and version as output.
 Step 7: Thats how Nmap is used for Operating System detection.
 
 ### Output
-![output]()
+![output](osdetectionusingnmap.jpeg)
