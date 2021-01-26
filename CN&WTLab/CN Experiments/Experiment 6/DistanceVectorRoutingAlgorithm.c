@@ -2,7 +2,7 @@
 struct node {
     unsigned dist[25];
     unsigned from[25];
-} rt[10];
+} routing_table[10];
 
 int main() {
     int cost_matrix[25][25];
@@ -10,13 +10,13 @@ int main() {
     printf("--------Distance Vector Routing Algorithm---------");
     printf("\nEnter the number of nodes : ");
     scanf("%d",&nodes);
-    printf("Enter the cost matrix :\n");
+    printf("\nEnter the cost matrix :\n");
     for(i=0;i<nodes;i++) {
         for(j=0;j<nodes;j++) {
             scanf("%d",&cost_matrix[i][j]);
             cost_matrix[i][i]=0;
-            rt[i].dist[j]=cost_matrix[i][j];
-            rt[i].from[j]=j;
+            routing_table[i].dist[j]=cost_matrix[i][j];
+            routing_table[i].from[j]=j;
         }
     }
         do {
@@ -26,10 +26,10 @@ int main() {
             //and add the distance from k to node j
             for(j=0;j<nodes;j++)
             for(k=0;k<nodes;k++)
-                if(rt[i].dist[j]>cost_matrix[i][k]+rt[k].dist[j]) {
+                if(routing_table[i].dist[j]>cost_matrix[i][k]+routing_table[k].dist[j]) {
                     //We calculate the minimum distance
-                    rt[i].dist[j]=rt[i].dist[k]+rt[k].dist[j];
-                    rt[i].from[j]=k;
+                    routing_table[i].dist[j]=routing_table[i].dist[k]+routing_table[k].dist[j];
+                    routing_table[i].from[j]=k;
                     count++;
                 }
         }while(count!=0);
@@ -38,7 +38,7 @@ int main() {
             printf("\n\nFor router %d\n",i+1);
             for(j=0;j<nodes;j++)
             {
-                printf("\t\nnode %d via %d Distance %d ",j+1,rt[i].from[j]+1,rt[i].dist[j]);
+                printf("\t\nnode %d via %d Distance %d ",j+1,routing_table[i].from[j]+1,routing_table[i].dist[j]);
             }
         }
     printf("\n\n");
