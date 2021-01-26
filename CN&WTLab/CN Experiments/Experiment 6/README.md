@@ -3,7 +3,7 @@
 ## Aim of the Experiment
 To implement Distance Vector Routing Algorithm.
 
-### steps or procedure of the Experiment
+### Steps or Procedure of the Experiment
 At each node x,
 #### Initialization
 for all destinations y in N:
