@@ -24,4 +24,4 @@ Step 8: Thats how Nmap scan runs.
 ### Intensescan
 ![output]()
 ### Pingscan
-![output]()
+![output](Pingscan.png)
