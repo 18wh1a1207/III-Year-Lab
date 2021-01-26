@@ -21,4 +21,4 @@ Send distance vector Dx = [ Dx(y) : y in N ] to all neighbours
 #### Forever
 
 ### Output
-![output]()
+![output](DIstanceVectorRoutingAlgorithmOutput.png)
