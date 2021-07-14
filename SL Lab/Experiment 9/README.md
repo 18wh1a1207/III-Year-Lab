@@ -3,4 +3,4 @@
 A Ruby script to print the elements of a given array
 
 ### Output
-![output]()
+![output](exp9.png)
