@@ -8,4 +8,4 @@ A TCL script to
 
 
 ### Output
-![output]()
+![output](exp14.png)
