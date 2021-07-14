@@ -3,4 +3,4 @@
 A TCL script that multiplies the numbers from 1 to 10
 
 ### Output
-![output]()
+![output](exp12.png)
